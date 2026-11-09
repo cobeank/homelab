@@ -1,2 +1,15 @@
 external-dns:
   policy: sync
+  provider:
+    name: godaddy
+  env:
+  - name: EXTERNAL_DNS_GODADDY_API_KEY
+    valueFrom:
+      secretKeyRef:
+        name: EXTERNAL_DNS_GODADDY_API_KEY
+        key: EXTERNAL_DNS_GODADDY_API_KEY
+  - name: EXTERNAL_DNS_GODADDY_API_SECRET
+    valueFrom:
+      secretKeyRef:
+        name: EXTERNAL_DNS_GODADDY_API_SECRET
+        key: EXTERNAL_DNS_GODADDY_API_SECRET
