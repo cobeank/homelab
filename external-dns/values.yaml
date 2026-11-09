@@ -6,10 +6,10 @@ external-dns:
   - name: EXTERNAL_DNS_GODADDY_API_KEY
     valueFrom:
       secretKeyRef:
-        name: EXTERNAL_DNS_GODADDY_API_KEY
-        key: EXTERNAL_DNS_GODADDY_API_KEY
+        name: godaddy-api-key
+        key: godaddy-api-key
   - name: EXTERNAL_DNS_GODADDY_API_SECRET
     valueFrom:
       secretKeyRef:
-        name: EXTERNAL_DNS_GODADDY_API_SECRET
-        key: EXTERNAL_DNS_GODADDY_API_SECRET
+        name: godaddy-api-secret
+        key: godaddy-api-secret
