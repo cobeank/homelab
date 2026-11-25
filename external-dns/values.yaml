@@ -13,3 +13,6 @@ external-dns:
       secretKeyRef:
         name: godaddy-api-secret
         key: godaddy-api-secret
+  extraArgs:
+  - --godaddy-api-key="$(EXTERNAL_DNS_GODADDY_API_KEY)"
+  - --godaddy-api-secret="$(EXTERNAL_DNS_GODADDY_API_SECRET)"
